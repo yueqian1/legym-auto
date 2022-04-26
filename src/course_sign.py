@@ -15,7 +15,7 @@ def listen_course(course_id):
     interval = 20
     while True:
         global i
-        if i >= 360 or user.signin_course(course_id):
+        if i >= 270 or user.signin_course(course_id):
             break
         i += 1
         try:
