@@ -20,7 +20,7 @@
 
 <div align="center">
 
-  <h1 align="center">乐健体育自动化二次签到脚本</h1>
+  <h1 align="center">乐健体育自动化脚本</h1>
 
   **本脚本程序及其任何修改版本严禁用于任何非法用途**
 
