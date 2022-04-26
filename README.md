@@ -43,7 +43,7 @@
 
 [项目自动化部署教程](https://github.com/Foreverddb/legym-auto/wiki/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B) 适用于新手的项目部署教程，阅读后即可自主部署此自动签到项目
 
-[课程自动签到部署教程]() 查看此教程前请先阅读上面的项目部署教程
+[课程自动签到部署教程](https://github.com/Foreverddb/legym-auto/wiki/%E8%AF%BE%E7%A8%8B%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0%E6%95%99%E7%A8%8B) 查看此教程前请先阅读上面的项目部署教程
 
 <!-- GETTING STARTED -->
 ## 声明
