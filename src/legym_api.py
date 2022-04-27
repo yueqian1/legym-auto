@@ -88,7 +88,7 @@ class User:
                 })
                 response = req(method='POST', url=signup_activity_url, headers=self.headers, data=payload,
                                error_text='活动报名失败')
-                print('活动报名：' + activity['name'] + json.dumps(response))
+                print('活动报名：' + activity['name'] + json.dumps(response, ensure_ascii=False))
 
     def signin_activities(self, keyword):
         for activity in self.activities:
@@ -103,7 +103,7 @@ class User:
                 })
                 response = req(method='PUT', url=signin_activity_url, headers=self.headers, data=payload,
                                error_text='活动签到失败')
-                print('活动签到：' + activity['name'] + json.dumps(response))
+                print('活动签到：' + activity['name'] + json.dumps(response, ensure_ascii=False))
 
     def signin_course(self, course_id):
         try:
@@ -117,7 +117,7 @@ class User:
             })
             response = req(method='PUT', url=signin_course_url, headers=self.headers, data=payload,
                            error_text='活动签到失败')
-            print('课程签到：' + course_id + json.dumps(response))
+            print('课程签到：' + course_id + json.dumps(response, ensure_ascii=False))
             if '成功' in response['message']:
                 return True
             else:
