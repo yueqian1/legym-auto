@@ -93,17 +93,20 @@ class User:
     def signin_activities(self, keyword):
         for activity in self.activities:
             if keyword in activity['name']:
-                payload = json.dumps({
-                    'userId': self.user_id,
-                    'activityId': activity['id'],
-                    'pageType': 'activity',
-                    'times': 2,
-                    'activityType': 0,
-                    'attainabilityType': 2
-                })
-                response = req(method='PUT', url=signin_activity_url, headers=self.headers, data=payload,
-                               error_text='活动签到失败')
-                print('活动签到：' + activity['name'] + json.dumps(response, ensure_ascii=False))
+                try:
+                    payload = json.dumps({
+                        'userId': self.user_id,
+                        'activityId': activity['id'],
+                        'pageType': 'activity',
+                        'times': 2,
+                        'activityType': 0,
+                        'attainabilityType': 2
+                    })
+                    response = req(method='PUT', url=signin_activity_url, headers=self.headers, data=payload,
+                                   error_text='活动签到失败')
+                    print('活动签到：' + activity['name'] + json.dumps(response, ensure_ascii=False))
+                except:
+                    continue
 
     def signin_course(self, course_id):
         try:
