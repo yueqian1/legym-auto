@@ -119,7 +119,7 @@ class User:
                 'userId': self.user_id
             })
             response = req(method='PUT', url=signin_course_url, headers=self.headers, data=payload,
-                           error_text='活动签到失败')
+                           error_text='课程签到失败')
             print('课程签到：' + course_id + json.dumps(response, ensure_ascii=False))
             if '成功' in response['message']:
                 return True
